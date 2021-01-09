@@ -1,30 +1,29 @@
 #pragma once
+
 template <typename T>
-class Vector
-{
-	T* arr;                                  //pointer to array
-	size_t arrSize;                          //store the number of elements currently used
-	size_t arrCapacity;                      //stores capacity of underlying array
+class tVector {
+	T *arr;									// pointer to underlying array
+	size_t arrSize;							// stores the number of elements currently used
+	size_t arrCap;							// stores the capacity of the underlying array
 
 public:
-	tVector();                               //init vector default values
-	~tVector();                              //destroy underlying array
+	cVector();							   // initializes the vector's default values
+	~tVector();							   // destroys the underlying array
+
+	T *data();							   // returns a pointer to the underlying array
+
+	void reserve(size_t newCapacity);	   // returns a pointer to the underlying array
+										   // at least the given capacity	
+
+	void push_back(const T& value);		   // adds an element to the end of the vector
+	void pop_back();					   // destroys and removes the last element of the vector
+										   // NOTE: This manually calls the destructor
+										   // on the removed 
 
 
-	T* data();                              //returns pointer to underlying array
-	void reserve(size_t newCapacity);       //reallocates array to given capacity
 
+	T &at(size_t index);				   // returns the element at the given index
 
-	void push_back(const T& value);          //adds an element to end of vector
-	void pop_back();                         //destroys and removes last element in the vector
-
-
-	T& at(size_t index);                     //returns element at the given index
-
-	size_t size() const;                     //returns current number of elements
-	size_t capacity() const
-	{
-		return new
-	}//returns max number of elements in array
+	size_t size() const;                   // returns current number of elements
+	size_t capacity()const;				   // returns maximum number of elements we can store
 };
-

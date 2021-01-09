@@ -1,6 +1,2 @@
 ﻿  tVector.cpp
-C:\Users\cthep\source\repos\CodeDesignAndDataStructures\DynamicArrays\tVector.h(10,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\cthep\source\repos\CodeDesignAndDataStructures\DynamicArrays\tVector.h(29): message : see reference to class template instantiation 'Vector<T>' being compiled
-C:\Users\cthep\source\repos\CodeDesignAndDataStructures\DynamicArrays\tVector.h(10,1): warning C4183: 'tVector': missing return type; assumed to be a member function returning 'int'
-C:\Users\cthep\source\repos\CodeDesignAndDataStructures\DynamicArrays\tVector.h(11,1): error C2523: 'Vector<T>::~tVector': destructor tag mismatch
-C:\Users\cthep\source\repos\CodeDesignAndDataStructures\DynamicArrays\tVector.h(28,2): error C2760: syntax error: unexpected token '}', expected 'type specifier'
+  DynamicArrays.vcxproj -> C:\Users\cthep\source\repos\CodeDesignAndDataStructures\x64\Debug\DynamicArrays.exe
